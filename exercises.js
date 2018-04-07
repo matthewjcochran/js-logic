@@ -196,7 +196,13 @@ console.log(spareChange(11));
  * Console.log your result.
 */ 
 
+function dirty30(one, two, three){
+  if((one + two + three) > 30){
+    return true
+  }
+}
 
+console.log(dirty30(1, 2, 33));
 
 /*
  * #10
