@@ -216,7 +216,15 @@ console.log(dirty30(1, 2, 33));
  * Console.log your result.
 */ 
 
+function evenStevens(num){
+  if(num%2 === 0){
+    return false;
+  }else{
+    return true;
+  }
+}
 
+console.log('is not even ' + evenStevens(21));
 
 
 /*
