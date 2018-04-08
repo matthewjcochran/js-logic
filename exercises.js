@@ -368,6 +368,9 @@ for(var i = 0; i < 5; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+for(var i = 0; i < myFavFoods.length; i++){
+  console.log(myFavFoods[i]);
+}  
 
 /*
  * #17
@@ -412,6 +415,26 @@ console.log('total: ' + total);
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+var east = [];
+var west = [];
+
+function allStars(ballers){
+  for(var i = 0; i < ballers.length; i++){
+    if(i%2 ===0){
+      east.push(ballers[i]);
+    }else{
+      west.push(ballers[i]);
+    }
+  }
+}
+
+allStars(players);
+console.log(players);
+console.log(east);
+console.log(west);
+
+
 /*
  * #19
  * Function - subways
@@ -426,6 +449,20 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special){
+  var withTuna = [];
+  for(var i = 0; i < special.length; i++){
+    if(i%2 === 0){
+      withTuna.push(special[i]);
+    }else{
+      withTuna.push('Classic Tuna')
+    }
+  }
+  return withTuna;
+}
+
+console.log(subOftheDay);
+console.log(subways(subOftheDay));
 
 /*
 Final Boss
@@ -441,9 +478,19 @@ Final Boss
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
  
-  
-  
 
+function removeLetter(str){
+  var noAs = [];
+  for(var i = 0; i < str.length; i++){
+    if(str[i] !== 'a' && str[i] !== 'A'){
+      noAs.push(str[i]);
+    }
+  }
+  return noAs;
+}
+  
+console.log(phrase);
+console.log(removeLetter(phrase));
 
 
 
