@@ -240,6 +240,16 @@ console.log('is not even ' + evenStevens(21));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+  if(cover >= 21 && age >= 21){
+    return true
+  }else{
+    return false;
+  }
+}
+
+console.log(daClub(20, 22));
+
 
 /*
  * #12
@@ -254,7 +264,15 @@ console.log('is not even ' + evenStevens(21));
  * Console.log your result.
 */ 
 
+function graduation(credits, thesis){
+  if(credits >= 120 || thesis === true){
+    return true;
+  }else{
+    return false;
+  }
+}
 
+console.log('graduation status: ' + graduation(123, false));
 
 /*
  * #13
@@ -268,6 +286,17 @@ console.log('is not even ' + evenStevens(21));
  * Console.log your result.
 */ 
 
+function moneyTrain(speed){
+  if(speed < 50){
+    return 'You are riding Honolulu\'s Rail.';
+  }else if(speed > 100){
+    return 'Now you ballin\' in the Shinkansen!'
+  }else{
+    return 'You are riding an Amtrak.';
+  }
+}
+
+console.log(moneyTrain(44));
 
 /*
  * #14
@@ -282,6 +311,19 @@ console.log('is not even ' + evenStevens(21));
  * Invoke your function again.
  * Console.log budget and doughnutBought again.
 */ 
+
+var budget = 34;
+var doughnutPrice = 2;
+var doughnutBought = 0;
+
+function buyDoughnut(){
+  budget -= doughnutPrice;
+  doughnutBought++;
+}
+
+console.log('budget: ' + budget + '   doughnut count:' + doughnutBought);
+buyDoughnut();
+console.log('budget: ' + budget + '   doughnut count:' + doughnutBought);
 
 /*Final Boss*/
 /*Create a function name dailySpecials which takes in a parameter: `special`.
@@ -316,6 +358,9 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for(var i = 0; i < 5; i++){
+  console.log('Player: ' + (i + 1));
+}
 
 /* 
  * #16
