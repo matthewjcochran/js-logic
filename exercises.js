@@ -384,6 +384,19 @@ for(var i = 0; i < 5; i++){
  * Console.log your result.
 */
 
+var numArray = [1, 3, 5, 7, 11];
+var total = 0;
+
+function sumItUp(arr){
+  var total = 0;
+  for(var i = 0; i < arr.length; i++){
+    total += arr[i];
+  }
+  return total;
+}
+
+total = sumItUp(numArray);
+console.log('total: ' + total);
 
 
 /*
