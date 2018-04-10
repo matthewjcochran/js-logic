@@ -329,7 +329,43 @@ console.log('budget: ' + budget + '   doughnut count:' + doughnutBought);
 /*Create a function name dailySpecials which takes in a parameter: `special`.
 Inside the function, create a switch statement that will check the daily specials of your favorite restaurant (or make up your own daily specials for each day of the week.*/
 
+function dailySpecials(specials){
+  switch(specials){
+    case 'Monday':
+    menu = 'Pizza';
+    break;
 
+    case 'Tuesday':
+    menu = 'Tacos';
+    break;
+
+    case 'Wednesday':
+    menu = 'Hot Dogs';
+    break;
+
+    case 'Thursday':
+    menu = 'Subway';
+    break;
+
+    case 'Friday':
+    menu = 'Chips';
+    break;
+
+    case'Saturday':
+    menu = 'Burger';
+    break;
+
+    case 'Sunday':
+    menu = 'Fries';
+    break;
+
+    default:
+    menu = 'closed today';
+  }
+  return menu;
+}  
+
+console.log(dailySpecials('Weeeeednesday'));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -478,7 +514,6 @@ Final Boss
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
  
-
 function removeLetter(str){
   var noAs = [];
   for(var i = 0; i < str.length; i++){
